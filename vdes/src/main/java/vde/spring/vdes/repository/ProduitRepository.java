@@ -8,4 +8,5 @@ import java.util.Optional;
 
 public interface ProduitRepository extends JpaRepository<Produit,Long>{
     List<Produit> findByNom(String nom);
+    List<Produit> findByDescription(String description);
 }

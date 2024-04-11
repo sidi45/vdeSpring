@@ -37,6 +37,12 @@ import java.util.List;
         public List<Produit> trouver(@PathVariable String nom){
             return produitService.trouver(nom);
         }
+
+
+        @GetMapping(path="definir/{description}")
+        public List<Produit> definir(@PathVariable String description){
+            return produitService.trouver(description);
+        }
     }
 
 

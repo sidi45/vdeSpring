@@ -43,4 +43,9 @@ public class produitServiceImple implements ProduitService{
     public Produit supprimer(Long id) {
         return null;
     }
+
+    @Override
+    public List<Produit> definir(String description) {
+        return produitRepository.findByDescription(description);
+    }
 }

@@ -11,4 +11,5 @@ public interface ProduitService {
     List<Produit> lire();
     Produit modiffier ( Long id , Produit produit);
     Produit supprimer(Long id);
+    List<Produit> definir(String description);
 }
